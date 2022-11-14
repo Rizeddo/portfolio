@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Figtree:wght@300;400;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Figtree', 'sans-sérif';
+}
+
+/*Barre de navigation */
+header {
+    border-bottom:2px solid  rgb(0, 184, 184);
+    box-shadow: 0px 0px 30px rgba(8, 8, 8, 0.225);
+}
+
+header h1 {
+    display: none;
+}
+
+nav {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+}
+
+nav h2 {
+    font-size: 40px;
+    margin: 0px;
+}
+
+nav ul {
+    margin: 0px;
+    align-items: center;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+nav li {
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 0px;
+    margin-right: 30px;
+    letter-spacing: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: rgb(0, 184, 184);
+    transition: all .2s ease-in-out;
+}
+
+.color_icon {
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    margin-top: 3px;
+}
+
+/*Portfolio*/
+article {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 50px  
+}
+
+article a {
+    box-shadow: 0px 0px 30px rgba(169, 169, 169, 0.522);
+    text-decoration: none;
+    color: black;
+}
+
+article a:hover {
+    cursor: pointer;
+    color: rgb(0, 184, 184);
+    transition: all .2s ease-in-out;
+}
+
+article h2 {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.card_project {
+    width: 300px;
+    height: 400px;
+    padding: 20px 20px 0px 20px;
+}
+
+.inactive {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    object-fit: cover;
+    opacity: 1;
+    z-index: 3;
+}
+
+.inactive:hover {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.active {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    z-index: 1;
+}
